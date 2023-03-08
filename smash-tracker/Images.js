@@ -1,0 +1,90 @@
+const Images = {
+    'Bayonetta': require('./assets/images/icons/bayonetta.png'),
+    'Bowser': require('./assets/images/icons/bowser.png'),
+    'Bowser Jr.': require('./assets/images/icons/bowser_jr.png'),
+    'Captain Falcon': require('./assets/images/icons/captain_falcon.png'),
+    'Chrom': require('./assets/images/icons/chrom.png'),
+    'Cloud': require('./assets/images/icons/cloud.png'),
+    'Corrin': require('./assets/images/icons/corrin.png'),
+    'Daisy': require('./assets/images/icons/daisy.png'),
+    'Dark Pit': require('./assets/images/icons/dark_pit.png'),
+    'Dark Samus': require('./assets/images/icons/dark_samus.png'),
+    'Diddy Kong': require('./assets/images/icons/diddy_kong.png'),
+    'Donkey Kong': require('./assets/images/icons/donkey_kong.png'),
+    'Dr. Mario': require('./assets/images/icons/dr_mario.png'),
+    'Duck Hunt': require('./assets/images/icons/duck_hunt.png'),
+    'Falco': require('./assets/images/icons/falco.png'),
+    'Fox': require('./assets/images/icons/fox.png'),
+    'Ganondorf': require('./assets/images/icons/ganondorf.png'),
+    'Greninja': require('./assets/images/icons/greninja.png'),
+    'Ice Climbers': require('./assets/images/icons/ice_climbers.png'),
+    'Ike': require('./assets/images/icons/ike.png'),
+    'Incineroar': require('./assets/images/icons/incineroar.png'),
+    'Inkling': require('./assets/images/icons/inkling.png'),
+    'Isabelle': require('./assets/images/icons/isabelle.png'),
+    'Jigglypuff': require('./assets/images/icons/jigglypuff.png'),
+    'Ken': require('./assets/images/icons/ken.png'),
+    'King Dedede': require('./assets/images/icons/king_dedede.png'),
+    'King K. Rool': require('./assets/images/icons/king_k_rool.png'),
+    'Kirby': require('./assets/images/icons/kirby.png'),
+    'Link': require('./assets/images/icons/link.png'),
+    'Little Mac': require('./assets/images/icons/little_mac.png'),
+    'Lucario': require('./assets/images/icons/lucario.png'),
+    'Lucas': require('./assets/images/icons/lucas.png'),
+    'Lucina': require('./assets/images/icons/lucina.png'),
+    'Luigi': require('./assets/images/icons/luigi.png'),
+    'Mario': require('./assets/images/icons/mario.png'),
+    'Marth': require('./assets/images/icons/marth.png'),
+    'Mega Man': require('./assets/images/icons/mega_man.png'),
+    'Meta Knight': require('./assets/images/icons/meta_knight.png'),
+    'Mewtwo': require('./assets/images/icons/mewtwo.png'),
+    'Mii Fighter': require('./assets/images/icons/mii_fighter.png'),
+    'Mr. Game & Watch': require('./assets/images/icons/mr_game_and_watch.png'),
+    'Ness': require('./assets/images/icons/ness.png'),
+    'Olimar': require('./assets/images/icons/olimar.png'),
+    'Pac-Man': require('./assets/images/icons/pac_man.png'),
+    'Palutena': require('./assets/images/icons/palutena.png'),
+    'Peach': require('./assets/images/icons/peach.png'),
+    'Pichu': require('./assets/images/icons/pichu.png'),
+    'Pikachu': require('./assets/images/icons/pikachu.png'),
+    'Piranha Plant': require('./assets/images/icons/piranha_plant.png'),
+    'Pit': require('./assets/images/icons/pit.png'),
+    'Pokemon Trainer': require('./assets/images/icons/pokemon_trainer.png'),
+    'Richter': require('./assets/images/icons/richter.png'),
+    'Ridley': require('./assets/images/icons/ridley.png'),
+    'R.O.B.': require('./assets/images/icons/rob.png'),
+    'Robin': require('./assets/images/icons/robin.png'),
+    'Rosalina & Luma': require('./assets/images/icons/rosalina_and_luma.png'),
+    'Roy': require('./assets/images/icons/roy.png'),
+    'Ryu': require('./assets/images/icons/ryu.png'),
+    'Samus': require('./assets/images/icons/samus.png'),
+    'Sheik': require('./assets/images/icons/sheik.png'),
+    'Shulk': require('./assets/images/icons/shulk.png'),
+    'Simon': require('./assets/images/icons/simon.png'),
+    'Snake': require('./assets/images/icons/snake.png'),
+    'Sonic': require('./assets/images/icons/sonic.png'),
+    'Toon Link': require('./assets/images/icons/toon_link.png'),
+    'Villager': require('./assets/images/icons/villager.png'),
+    'Wario': require('./assets/images/icons/wario.png'),
+    'Wii Fit Trainer': require('./assets/images/icons/wii_fit_trainer.png'),
+    'Wolf': require('./assets/images/icons/wolf.png'),
+    'Yoshi': require('./assets/images/icons/yoshi.png'),
+    'Young Link': require('./assets/images/icons/young_link.png'),
+    'Zelda': require('./assets/images/icons/zelda.png'),
+    'Zero Suit Samus': require('./assets/images/icons/zero_suit_samus.png'),
+};
+
+module.exports = Images;
+
+/* 
+Step 1. RUN this bash script createImagesCode.sh in the assets/images/icons folder to generate the above code:
+
+printf "const Images = {\n"
+for f in *.png; do
+    FILE="${f%.png}"
+    printf "\t'$FILE': require('./assets/images/icons/$FILE'),\n"
+done
+printf "};\n"
+
+Step 2. Edit the key values to match database entries (proper capitalization)
+*/
