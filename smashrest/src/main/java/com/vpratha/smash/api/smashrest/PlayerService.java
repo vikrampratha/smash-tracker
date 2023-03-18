@@ -19,7 +19,7 @@ public class PlayerService {
             repo.findAll().forEach(
                 (PlayerEntity pe) -> {
                     list.add(
-                        new Player(pe.getId(), pe.getUsername())
+                        new Player(pe.getId(), pe.getUsername(), pe.getPassword())
                     );
                 }
             );
@@ -36,7 +36,7 @@ public class PlayerService {
                 (PlayerEntity pe) -> {
                     if (pe.getId() != id) {           // maybe change by adding repo method that queries select all others from db
                         list.add(
-                            new Player(pe.getId(), pe.getUsername())
+                            new Player(pe.getId(), pe.getUsername(), pe.getPassword())
                         );
                     }
                 }
@@ -52,7 +52,7 @@ public class PlayerService {
             Optional<PlayerEntity> opt = repo.findById(id);
             if (opt.isPresent()) {
                 PlayerEntity pe = opt.get();
-                return new Player(pe.getId(), pe.getUsername());
+                return new Player(pe.getId(), pe.getUsername(), pe.getPassword());
             } else {
                 return null;
             }
@@ -63,9 +63,9 @@ public class PlayerService {
 
     Player insert(Player p) {
         try {
-            PlayerEntity pe = new PlayerEntity(p.getUsername());
+            PlayerEntity pe = new PlayerEntity(p.getUsername(), p.getPassword());
             pe = repo.save(pe);
-            return new Player(pe.getId(), pe.getUsername());
+            return new Player(pe.getId(), pe.getUsername(), pe.getPassword());
         } catch (Exception e) {
             return null;
         }
@@ -78,7 +78,7 @@ public class PlayerService {
                 PlayerEntity pe = opt.get();
                 pe.setUsername(p.getUsername());
                 pe = repo.save(pe);
-                return new Player(pe.getId(), pe.getUsername());
+                return new Player(pe.getId(), pe.getUsername(), pe.getPassword());
             } else {
                 return null;
             }

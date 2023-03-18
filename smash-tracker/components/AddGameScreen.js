@@ -6,7 +6,7 @@ import FighterOptions from './FighterOptions';
 import FighterSelector from './FighterSelector';
 import OpponentSelector from './OpponentSelector';
 import PlayerPicker from './PlayerPicker';
-import { TabNavContext } from './TabNavContext';
+import { TabNavContext } from '../context/TabNavContext';
 import Images from "../Images";
 import OpponentPicker from './OpponentPicker';
 import { ButtonGroup } from 'react-native-elements';

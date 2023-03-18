@@ -16,11 +16,15 @@ public class PlayerEntity {
     @Column(name = "username", unique = true, nullable = false)
     private String username;
 
+    @Column(name = "password", nullable = false)
+    private String password;
+
     public PlayerEntity() {
     }
 
-    public PlayerEntity(String username) {
+    public PlayerEntity(String username, String password) {
         this.username = username;
+        this.password = password;
     }
 
     public long getId() {
@@ -33,6 +37,14 @@ public class PlayerEntity {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
     
 }

@@ -7,7 +7,7 @@ import GameCard from './GameCard';
 import PlayerPicker from './PlayerPicker';
 import Images from '../Images';
 import { useIsFocused } from '@react-navigation/native';
-import { TabNavContext } from './TabNavContext';
+import { TabNavContext } from '../context/TabNavContext';
 import FighterSelector from './FighterSelector';
 import FighterPicker from './FighterPicker';
 import { ProgressBar } from 'react-native-web';

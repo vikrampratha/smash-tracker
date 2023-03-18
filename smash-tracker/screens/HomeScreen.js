@@ -2,10 +2,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { Button } from '@rneui/themed';
 import { StyleSheet, Text, View } from 'react-native';
-import AddGameScreen from './AddGameScreen';
-import GamesScreen from './GamesScreen';
-import StatsScreen from './StatsScreen';
-import { TabNavContext } from './TabNavContext';
+import AddGameScreen from '../components/AddGameScreen';
+import GamesScreen from '../components/GamesScreen';
+import StatsScreen from '../components/StatsScreen';
+import { TabNavContext } from '../context/TabNavContext';
 
 const Tab = createBottomTabNavigator();
 

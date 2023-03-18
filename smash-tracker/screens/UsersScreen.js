@@ -2,8 +2,8 @@ import { Button } from '@rneui/themed';
 import axios from 'axios';
 import { useState } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
-import UserPicker from './UserPicker';
-import UserSelector from './UserSelector';
+import UserPicker from '../components/UserPicker';
+import UserSelector from '../components/UserSelector';
 import { apiEndpoint } from '../Env';
 
 
